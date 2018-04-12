@@ -49,12 +49,15 @@ int accept(int ch)
       scanf("%d",&Process[i].BurstTime);
    }
    
+     if(ch==3)
+   {
       for(i=1;i<=n;i++)
       {
          printf("\nEnter the priority for P%d: ",i);
          scanf("%d",&Process[i].Priority);
       }
    return n;
+   }
    
 
    printf("\nInputs given by the user are:\n");
